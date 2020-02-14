@@ -1,7 +1,8 @@
 import psutil
 import json
 import time
-import os
+import subprocess
+from subprocess import CREATE_NO_WINDOW
 
 with open('processes.json', 'r') as from_file:
     data = from_file.read()
@@ -21,5 +22,6 @@ while True:
                             same_launcher = True
                     if same_launcher is False:
                         time.sleep(30)
-                        os.system("taskkill /f /im " + launcher)
+                        CREATE_NO_WINDOW = 0x08000000
+                        subprocess.call("taskkill /f /im " + launcher, creationflags = CREATE_NO_WINDOW)
                         break
