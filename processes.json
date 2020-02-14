@@ -1,0 +1,20 @@
+{
+    "Origin.exe": [
+        {
+            "game": "r5apex.exe"
+        }
+    ],
+    "upc.exe": [
+        {
+            "game": "RainbowSix.exe"
+        }
+    ],
+    "Battle.net.exe": [
+        {
+            "game": "ModernWarfare.exe"
+        },
+        {
+            "game": "Overwatch.exe"
+        }
+    ]
+}
